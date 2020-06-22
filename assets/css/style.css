@@ -1,0 +1,189 @@
+/* Custom Definitions */
+
+:root {
+    --primaryColor: rgb(139, 0, 0);
+    --accentColor: rgb(128, 128, 128);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    
+    --heading: 'Raleway', sans-serif;
+    --logo: 'Rock Salt', cursive;
+    --text: 'Open Sans', sans-serif;
+
+}
+
+h3, h4, h5 {
+    color: var(--primaryColor);
+    font-family: var(--heading);
+    font-weight: 700;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+body {
+    font-family: var(--text);
+}
+
+
+
+/* Utility Styling */
+.btn-outline-danger {
+    color: var(--primaryColor) !important;
+    border-color: var(--primaryColor) !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--primaryColor) !important;
+    color: var(--white) !important;
+}
+
+.bg-accent {
+    background-color: var(--accentColor);
+}
+
+.border-danger {
+    border-color: var(--primaryColor) !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/* Navigation */
+.navbar a {
+    color: var(--white) !important;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand, h1 {
+    font-family: var(--logo);
+    color: var(--primaryColor);
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+.navbar-toggler {
+    border-color: var(--accentColor) !important;
+}
+.navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(128, 128, 128)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+/* Hero Section */
+.jumbotron {
+    color: var(--white);
+    padding-top: 0 !important;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/assets/img/musicpedal.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 992px) { 
+    .jumbotron .container h1 {
+        padding-top: 15rem;
+    }
+ }
+
+
+ /* Filler Info */
+ .filler {
+     background-color: var(--primaryColor);
+     color: var(--white);
+     font-size: 26px;
+     text-align: center;
+     padding: .5rem;
+ }
+
+ /* Programs Section */
+@media (min-width: 576px) and (max-width: 992px) {
+    .learn {
+        margin-left: 42.5%;
+    }
+}
+
+@media (max-width: 570px) {
+    .learn {
+        margin-left: 35%;
+    }
+}
+
+
+ /* Pricing Section */
+
+ #pricing ul.lessonList li {
+     text-align: justify;
+ }
+
+ @media (min-width: 576px) {
+     #pricing ul {
+         padding-left: 0;
+     }
+
+     #pricing ul.lessonList li {
+         text-align: center;
+     }
+ }
+
+
+
+ /* Contact Section */
+ @media (min-width: 992px) {
+     #contact div.container {
+     max-width: 50%;
+     } 
+}
+
+ 
+
+
+ /* Footer */
+.footer {
+    background-color: var(--black);
+}
+
+.footer ul li a {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+    color: var(--accentColor) !important;
+}
+
+
+.footer ul.social-icons li a i{
+    color: var(--primaryColor);
+    font-size: 36px;
+}
+
+.footer ul.social-icons li a i:hover {
+    color: var(--white);
+}
+
+.footer .copy {
+    font-size: 14px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
