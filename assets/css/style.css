@@ -80,7 +80,7 @@ ul {
     color: var(--white);
     padding-top: 0 !important;
     min-height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/img/musicpedal.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/musicpedal.jpg');
     background-size: cover;
     background-position: center center;
 }
